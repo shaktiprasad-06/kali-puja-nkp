@@ -1,0 +1,37 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:#29140c;background:#fffaf4;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.hero{min-height:100vh;color:white;background:linear-gradient(135deg,rgba(30,5,3,.92),rgba(102,13,9,.72)),url("https://commons.wikimedia.org/wiki/Special:FilePath/Kali_by_Raja_Ravi_Varma.jpg") center/cover}
+.navbar{height:72px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:#0004;position:sticky;top:0;z-index:5}
+.brand{font-weight:bold;font-size:20px}.nav-links{display:flex;gap:18px}
+.nav-links a{font-size:14px;font-weight:bold}
+.nav-links a:hover{color:#ffd27a}
+.menu-btn{display:none;background:none;border:0;color:white;font-size:27px}
+.hero-content{min-height:calc(100vh - 72px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px}
+.small-title{letter-spacing:5px;color:#ffd27a}
+.hero h1{font:clamp(42px,8vw,82px) Georgia;margin:10px}.hero h2{font-size:clamp(24px,4vw,42px);color:#ffe4a7}
+.primary-btn{background:#f5b642;padding:12px 25px;border-radius:30px;font-weight:bold}
+section{padding:75px 7%}.section-heading{text-align:center;margin-bottom:40px}.section-heading h2{font:38px Georgia;margin:5px}.section-heading span{font-size:32px}.section-heading p{color:#75645b}.light{color:white}.light p{color:#eaded7}
+.cards,.committee-grid,.social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.info-card,.visitor-form,.messages-card,.social-grid a{background:white;padding:28px;border-radius:18px;box-shadow:0 10px 30px #3c140514}
+.info-card{text-align:center}.info-card div{font-size:38px}.dark{background:linear-gradient(135deg,#2b0704,#67120d);color:white}
+.message-box{max-width:950px;margin:auto;background:#ffffff12;border:1px solid #ffffff2e;border-radius:22px;padding:35px;display:flex;gap:28px;align-items:center}
+.president-photo{min-width:120px;height:120px;border-radius:50%;display:grid;place-items:center;background:#f5b642;color:#5b0b05;font:48px Georgia}.quote{font-style:italic;font-size:17px}
+.message-box h3{color:#ffd27a}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gallery img,.upload-card{width:100%;height:280px;object-fit:cover;border-radius:15px}
+.upload-card{background:#f3dfc4;border:2px dashed #b98548;display:grid;place-items:center;align-content:center;text-align:center}
+.video-card{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.video-card{max-width:800px;margin:auto;background:#fff;padding:12px;border-radius:18px;box-shadow:0 10px 30px #3c140514}
+.video-card video{width:100%;max-height:460px;border-radius:12px;background:#180403}
+.message-layout{max-width:1050px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+
+.visitor-form label{display:block;font-weight:bold;margin-bottom:14px}.visitor-form input,.visitor-form textarea{width:100%;padding:12px;border:1px solid #d5c1ae;border-radius:9px;margin-top:5px;font:inherit}
+.visitor-form textarea{min-height:90px}.visitor-form button{width:100%;padding:13px;border:0;border-radius:9px;background:#68120d;color:white;font-weight:bold;cursor:pointer}.visitor-form #status{min-height:22px;text-align:center;font-weight:bold}
+
+.messages-card h3{margin-top:0}.message-item{padding:12px 0;border-bottom:1px solid #eadbc9}.message-item strong{color:#68120d}.message-item p{white-space:pre-wrap;margin:4px 0}.message-date{font-size:11px;color:#8a776d}
+.committee-grid>div{background:#ffffff12;border:1px solid #ffffff2e;padding:20px;border-radius:15px;text-align:center;color:white}.committee-grid b{display:block;color:#ffd27a}.committee-grid span{display:block}
+.social-grid a{display:flex;flex-direction:column}.social-grid small{color:#75645b}footer{padding:30px;text-align:center;background:#190403;color:white}.social-grid a:hover{transform:translateY(-3px)}@media(max-width:800px){.menu-btn{display:block}
+.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:#250604;padding:18px 7%;flex-direction:column}.nav-links.open{display:flex}
+.cards,.committee-grid,.social-grid,.message-layout{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.message-box{flex-direction:column;text-align:center}}
+@media(max-width:480px){section{padding:60px 5%}.gallery{grid-template-columns:1fr}.gallery img,.upload-card{height:230px}.hero h1{font-size:44px}}
