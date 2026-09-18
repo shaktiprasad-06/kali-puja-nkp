@@ -27,6 +27,3 @@ Never commit your ADMIN_KEY to GitHub.
 
 VIDEO:
 Put your MP4 at videos/puja-video.mp4.
-
-EDITING:
-Committee sample details are in index.html. Basic public text can also be edited there.
