@@ -5,6 +5,107 @@ a{text-decoration:none;color:inherit}
 .hero{min-height:100vh;color:white;background:linear-gradient(135deg,rgba(30,5,3,.92),rgba(102,13,9,.72)),url("https://commons.wikimedia.org/wiki/Special:FilePath/Kali_by_Raja_Ravi_Varma.jpg") center/cover}
 .navbar{height:72px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:#0004;position:sticky;top:0;z-index:5}
 .brand{font-weight:bold;font-size:20px}.nav-links{display:flex;gap:18px}
+
+/* Coming Soon Section */
+.coming-soon {
+    padding: 80px 7%;
+    text-align: center;
+    background: linear-gradient(135deg, #3a0804, #7b170f);
+    color: white;
+    overflow: hidden;
+}
+
+.coming-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.coming-icon {
+    font-size: 55px;
+}
+
+.coming-label {
+    color: #ffd27a;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.coming-soon > .coming-content > h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(35px, 6vw, 60px);
+    color: #ffe1a1;
+    margin: 10px 0 30px;
+}
+
+/* Scrolling Date */
+.date-marquee {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 210, 122, 0.5);
+    border-radius: 12px;
+    padding: 15px 0;
+    margin: 25px auto 40px;
+    color: #ffd27a;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* Special Attraction */
+.special-attraction {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.special-attraction > span {
+    font-size: 50px;
+}
+
+.special-attraction h3 {
+    color: #ffd27a;
+    font-size: 20px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.special-attraction h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: #ffe1a1;
+    margin: 5px 0;
+}
+
+.special-attraction p {
+    color: #f5e5dc;
+    margin-bottom: 0;
+}
+
+.invitation {
+    color: #ffd27a;
+    font-size: 21px;
+    margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+    .coming-soon {
+        padding: 60px 5%;
+    }
+
+    .special-attraction h2 {
+        font-size: 30px;
+    }
+
+    .date-marquee {
+        font-size: 17px;
+    }
+}
+
+
+
 .nav-links a{font-size:14px;font-weight:bold}
 .nav-links a:hover{color:#ffd27a}
 .menu-btn{display:none;background:none;border:0;color:white;font-size:27px}
